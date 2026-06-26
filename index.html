@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#172B36" />
+  <meta name="theme-color" content="#0F1F28" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
   <title>Saffra — AI Data Automation Platform</title>
@@ -44,6 +44,11 @@
     <div class="loader__bar"></div>
   </div>
 
+  <!-- decorative ambient layers (pure CSS, non-interactive) -->
+  <div class="bg-grain" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--2" aria-hidden="true"></div>
+
   <header class="site-header">
     <nav class="nav container" aria-label="Primary">
       <a href="#" class="brand" aria-label="Saffra home">Saffra</a>
@@ -59,11 +64,16 @@
   <main>
     <section class="hero container" aria-labelledby="hero-title">
       <p class="eyebrow" data-anim>The data pipeline, automated</p>
-      <h1 id="hero-title" data-anim>Your data, pipeline-ready —<br />before your coffee's cold.</h1>
+      <h1 id="hero-title" data-anim>Your data, pipeline-ready —<br /><span class="hero__accent">before your coffee's cold.</span></h1>
       <p class="hero__sub" data-anim>Saffra wires up your sources, runs AI-driven transforms, and delivers clean, production-grade data — so your team ships instead of cleaning.</p>
       <div class="hero__cta" data-anim>
         <a href="#pricing" class="btn btn--primary">Get started</a>
         <a href="#features" class="btn btn--ghost">See how it works</a>
+      </div>
+      <div class="hero__stats" data-anim>
+        <div class="stat"><span class="stat__num">5M+</span><span class="stat__label">rows / run</span></div>
+        <div class="stat"><span class="stat__num">3</span><span class="stat__label">currencies</span></div>
+        <div class="stat"><span class="stat__num">&lt;500ms</span><span class="stat__label">time to interactive</span></div>
       </div>
     </section>
 
