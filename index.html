@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#172B36" />
+
+  <title>Aether — AI Data Automation Platform</title>
+  <meta name="description" content="Aether automates your data pipelines end-to-end with AI. Connect, transform, and ship clean data in minutes — no engineering overhead." />
+  <link rel="canonical" href="https://your-deploy-url.vercel.app/" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Aether" />
+  <meta property="og:title" content="Aether — AI Data Automation Platform" />
+  <meta property="og:description" content="Automate your data pipelines end-to-end with AI." />
+  <meta property="og:url" content="https://your-deploy-url.vercel.app/" />
+  <meta property="og:image" content="/assets/chart-pie.svg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aether — AI Data Automation Platform" />
+  <meta name="twitter:description" content="Automate your data pipelines end-to-end with AI." />
+  <meta name="twitter:image" content="/assets/chart-pie.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aether",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "29", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="loader" aria-hidden="true">
+    <div class="loader__bar"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#" class="brand" aria-label="Aether home">Aether</a>
+      <ul class="nav__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#proof">Customers</a></li>
+      </ul>
+      <a href="#pricing" class="btn btn--primary">Start free</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <p class="eyebrow" data-anim>AI-native data automation</p>
+      <h1 id="hero-title" data-anim>Ship clean data<br />in minutes, not sprints.</h1>
+      <p class="hero__sub" data-anim>Aether connects your sources, transforms with AI, and delivers production-ready pipelines — without the engineering tax.</p>
+      <div class="hero__cta" data-anim>
+        <a href="#pricing" class="btn btn--primary">Start free</a>
+        <a href="#features" class="btn btn--ghost">See how it works</a>
+      </div>
+    </section>
+
+    <section id="features" class="features container" aria-labelledby="features-title">
+      <h2 id="features-title">Built for teams who move fast</h2>
+      <p class="features__hint">Resize the window narrow to see the grid refactor into an accordion.</p>
+      <div id="bento" class="bento"><!-- injected by bento.js --></div>
+    </section>
+
+    <section id="pricing" class="pricing container" aria-labelledby="pricing-title">
+      <h2 id="pricing-title">Simple, transparent pricing</h2>
+      <p class="pricing__sub">Switch currency and billing — prices recalculate live.</p>
+
+      <div id="pricing-controls" class="pricing__controls">
+        <div class="switch" role="group" aria-label="Billing cycle">
+          <button type="button" data-billing="monthly" class="switch__btn is-active">Monthly</button>
+          <button type="button" data-billing="annual" class="switch__btn">Annual <span class="switch__save">−20%</span></button>
+        </div>
+        <div class="switch" role="group" aria-label="Currency">
+          <button type="button" data-currency="USD" class="switch__btn is-active">USD</button>
+          <button type="button" data-currency="INR" class="switch__btn">INR</button>
+          <button type="button" data-currency="EUR" class="switch__btn">EUR</button>
+        </div>
+      </div>
+
+      <div id="pricing-grid" class="pricing__grid"></div>
+    </section>
+
+    <section id="proof" class="proof container" aria-labelledby="proof-title">
+      <h2 id="proof-title">Trusted by data teams everywhere</h2>
+      <blockquote class="proof__quote">
+        <p>"Aether replaced three internal tools and a week of manual cleanup. Our pipelines just run now."</p>
+        <footer>— Engineering Lead, Fintech Scale-up</footer>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Aether. Built for Frontend Battle 3.0.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
