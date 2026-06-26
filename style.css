@@ -4,8 +4,8 @@
   --border:     rgba(217,232,226,0.14);
   --text:       #F1F6F4;
   --text-muted: #D9E8E2;
-  --accent:     #FFC801;
-  --accent-2:   #FF9932;
+  --accent:     #FF9932;   /* Deep Saffron — now primary */
+  --accent-2:   #FFC801;   /* Forsythia — secondary */
 
   --font-display: 'JetBrains Mono', monospace;
   --font-body:    'Inter', sans-serif;
@@ -39,15 +39,23 @@ h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 0.6rem; }
 
 .btn {
   display: inline-block; padding: 0.7em 1.4em; border-radius: 10px; font-weight: 600;
-  transition: transform var(--dur-micro) var(--ease-out), background var(--dur-micro) var(--ease-out);
+  transition: transform var(--dur-micro) var(--ease-out), box-shadow var(--dur-micro) var(--ease-out);
 }
 .btn:hover { transform: translateY(-2px); }
-.btn--primary { background: var(--accent); color: var(--bg); }
+.btn--primary {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  color: var(--bg);
+}
+.btn--primary:hover { box-shadow: 0 8px 24px rgba(255,153,50,0.3); }
 .btn--ghost { border: 1px solid var(--border); }
 
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(23,43,54,0.7); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-.brand { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; }
+.brand {
+  font-family: var(--font-display); font-weight: 700; font-size: 1.3rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
 .nav__links { display: flex; gap: 2rem; color: var(--text-muted); }
 .nav__links a:hover { color: var(--text); transition: color var(--dur-micro) var(--ease-out); }
 
@@ -133,7 +141,8 @@ h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 0.6rem; }
 .tier:hover { transform: translateY(-4px); border-color: var(--accent); }
 .tier--featured { border-color: var(--accent); }
 .tier__badge {
-  position: absolute; top: -12px; left: 2rem; background: var(--accent); color: var(--bg);
+  position: absolute; top: -12px; left: 2rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%); color: var(--bg);
   font-size: 0.72rem; font-weight: 700; padding: 0.25em 0.7em; border-radius: 999px; font-family: var(--font-display);
 }
 .tier__name { font-size: 1.4rem; margin-bottom: 0.4rem; }
