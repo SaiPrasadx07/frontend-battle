@@ -6,7 +6,7 @@ const NODES = [
   { icon: 'chart-pie',         title: 'Live analytics',
     body: 'Watch throughput, row counts, and errors update in real time across every pipeline you run.' },
   { icon: 'arrow-trending-up', title: 'Scales with you',
-    body: 'From 10k rows to 5M, Aether allocates dedicated infrastructure automatically under load.' },
+   body: 'From 10k rows to 5M, Saffra allocates dedicated infrastructure automatically under load.' },
   { icon: 'arrow-path',        title: 'Continuous sync',
     body: 'Schedule runs or trigger on change so your destinations are always fresh and consistent.' },
 ];
